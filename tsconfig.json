@@ -21,7 +21,16 @@
        ],
        "@utils/*": [
          "src/utils/*"
-       ]
+       ],
+       "@navigation/*": [
+        "src/navigation/*"
+      ],
+      "@auth/*": [
+        "src/scenes/auth/*"
+      ],
+      "@user/*": [
+        "src/scenes/user/*"
+      ]
     },
  }
 }
