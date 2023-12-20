@@ -11,7 +11,7 @@ type Props = {};
 const RootNavigator = (props: Props) => {
   return (
     <>
-      <NavigationContainer>
+      <NavigationContainer >
         <UserNavigator />
       </NavigationContainer>
     </>

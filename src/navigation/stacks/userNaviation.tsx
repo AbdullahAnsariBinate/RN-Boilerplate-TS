@@ -1,6 +1,6 @@
 import React from 'react';
 import {Home, User, About} from '@user/index';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import DrawerNavigator from '../drawer/Drawer';
 
 type RootStackParamList = {
@@ -12,10 +12,8 @@ type RootStackParamList = {
 const RootStack = createNativeStackNavigator<RootStackParamList>();
 
 const UserNavigator = () => (
-  <RootStack.Navigator initialRouteName='Drawers'>
-    <RootStack.Screen name="Drawers" component={DrawerNavigator} />
-    <RootStack.Screen name="About" component={About} />
-    <RootStack.Screen name="User" component={User} />
+  <RootStack.Navigator initialRouteName="Home" screenOptions={{headerShown:false}}>
+    <RootStack.Screen name="Home" component={DrawerNavigator} />
   </RootStack.Navigator>
 );
 
